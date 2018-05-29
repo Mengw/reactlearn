@@ -10,6 +10,8 @@ import {Title, Title2, Title3,Dog} from './learnreact/learn3';
 
 import {Index6, Index66} from './learnreact/learn6'
 
+import {PercentageApp} from './learnreact2/learn1'
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
@@ -43,6 +45,12 @@ ReactDOM.render(
 
 ReactDOM.render(
     <Index66 />,
+    document.getElementById('root')
+)
+
+// 2-1
+ReactDOM.render(
+    <PercentageApp />,
     document.getElementById('root')
 )
 
