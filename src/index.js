@@ -8,6 +8,8 @@ import Notification from './learnreact/learn1'
 import Index from './learnreact/learn2'
 import {Title, Title2, Title3,Dog} from './learnreact/learn3';
 
+import {Index6, Index66} from './learnreact/learn6'
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
@@ -30,6 +32,17 @@ ReactDOM.render(
 // learn3
 ReactDOM.render(
     <Dog />,
+    document.getElementById('root')
+)
+
+// learn6
+ReactDOM.render(
+    <Index6 />,
+    document.getElementById('root')
+)
+
+ReactDOM.render(
+    <Index66 />,
     document.getElementById('root')
 )
 
