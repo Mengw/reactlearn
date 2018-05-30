@@ -40,7 +40,6 @@ export class Editor1 extends Component{
 // 完成一个函数 getDefaultStyledPost，这个函数接受一个表示样式的对象作为参数，返回一个组件只有 <p> 元素的组件：
 const getDefaultStyledPost = (defaultStyle) => {
     /* TODO */
-
     return class Post extends Component{
         render(){
             const style = {...defaultStyle, ...this.props.style};
@@ -49,6 +48,7 @@ const getDefaultStyledPost = (defaultStyle) => {
     }
 }
 
+/*
 const getDefaultStyledPost = (defaultStyle) => {
     return props => <p style = {{...defaultStyle, ...props.style}} />
-}
+}*/

@@ -8,13 +8,16 @@ import Notification from './learnreact/learn1'
 import Index from './learnreact/learn2'
 import {Title, Title2, Title3,Dog} from './learnreact/learn3';
 
-import {Index6, Index66} from './learnreact/learn6'
+import {Index161, Index162} from './learnreact/learn6'
 
 import {PercentageApp} from './learnreact2/learn1'
 import {AutoFocusInput,Post} from './learnreact2/learn2-4'
 
 import {Card} from './learnreact2/learn2-5'
 import {Editor, Editor1} from './learnreact2/learn2-6'
+
+
+import {Index31} from './learnreact3/react-context'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -43,12 +46,12 @@ ReactDOM.render(
 
 // learn6
 ReactDOM.render(
-    <Index6 />,
+    <Index161 />,
     document.getElementById('root')
 )
 
 ReactDOM.render(
-    <Index66 />,
+    <Index162 />,
     document.getElementById('root')
 )
 
@@ -94,3 +97,10 @@ ReactDOM.render(
     <Editor1 />,
     document.getElementById('root')
 )
+
+// 3-1
+ReactDOM.render(
+    <Index31 />,
+    document.getElementById('root')
+)
+

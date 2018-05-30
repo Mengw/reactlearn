@@ -10,7 +10,7 @@ const users = [
     { username: 'Lucy', age: 20, gender: 'female' }
 ];
 
-export class Index6 extends Component {
+export class Index161 extends Component {
     render () {
         return (
             <div>
@@ -24,7 +24,7 @@ export class Index6 extends Component {
     }
 }
 
-export class Index61 extends Component {
+export class Index162 extends Component {
     render () {
         const userElements = [];
         for(let user of users){
