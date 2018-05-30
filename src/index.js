@@ -11,6 +11,10 @@ import {Title, Title2, Title3,Dog} from './learnreact/learn3';
 import {Index6, Index66} from './learnreact/learn6'
 
 import {PercentageApp} from './learnreact2/learn1'
+import {AutoFocusInput,Post} from './learnreact2/learn2-4'
+
+import {Card} from './learnreact2/learn2-5'
+import {Editor, Editor1} from './learnreact2/learn2-6'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -54,3 +58,39 @@ ReactDOM.render(
     document.getElementById('root')
 )
 
+
+// 2-4
+ReactDOM.render(
+    <AutoFocusInput />,
+    document.getElementById('root')
+)
+
+
+ReactDOM.render(
+    <Post content="hahaha"/>,
+    document.getElementById('root')
+)
+
+
+// 2-5
+ReactDOM.render(
+    <Card content={
+        <div>
+            <h2>React.js hahaha</h2>
+            <div>开源、免费、专业、简单</div>
+            订阅：<input />
+        </div>
+    } />,
+    document.getElementById('root')
+)
+
+// 2-6
+ReactDOM.render(
+    <Editor />,
+    document.getElementById('root')
+)
+
+ReactDOM.render(
+    <Editor1 />,
+    document.getElementById('root')
+)
