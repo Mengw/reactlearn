@@ -6,7 +6,7 @@ import React, { Component, PropTypes } from 'react';
 class Header extends Component {
 
     static contextTypes = {
-        store: PropTypes.object
+        // store: PropTypes.object
     }
 
     constructor () {
@@ -34,4 +34,32 @@ class Header extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
+        themeColor: state.themeColor
+    }
+}
+
+Header = connect(mapStateToProps)(Header)
+
 export default Header
+
+import React, { Component, PropTypes } from 'react'
+import { connect } from './react-redux'
+
+class Header extends Component{
+    static proTypes = {
+        themeColor: PropTypes.string
+    }
+
+    render () {
+        return (
+            <h1 style={{ color: this.props.themeColor }}>React.js</h1>
+        )
+    }
+}
+
+
+Header = connect(mapStateTopros)(Header);
+
+export default Header;

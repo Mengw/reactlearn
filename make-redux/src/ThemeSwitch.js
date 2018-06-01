@@ -7,7 +7,7 @@ import React, { Component, PropTypes } from 'react'
 
 class ThemeSwitch extends Component {
     static contextTypes = {
-        store: PropTypes.object
+        // store: PropTypes.object
     }
 
     constructor () {

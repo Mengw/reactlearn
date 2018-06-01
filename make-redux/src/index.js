@@ -394,7 +394,7 @@ const store = createStore(themeReducer);
 class Index extends Component {
 
     static childContextTypes = {
-        store : PropTypes.object
+        // store : PropTypes.object
     }
 
     getChildContext(){
@@ -412,10 +412,12 @@ class Index extends Component {
 }
 
 
-
-
-
 ReactDOM.render(
     <Index />,
     document.getElementById('root')
 )
+
+
+
+
+
