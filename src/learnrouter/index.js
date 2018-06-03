@@ -94,14 +94,12 @@ const Player = (props) => {
         return <div>Sorry,but the player was not found</div>
     }
 
-    return (<div>
-        <h1>
+    return <div>
             <h1>{player.name} (#{player.number})</h1>
             <h2>Position: {player.position}</h2>
             <Link to='/roster'>Back</Link>
-        </h1>
     </div>
-    )
+
 }
 
 const Main = () =>

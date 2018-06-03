@@ -20,7 +20,7 @@ import {Editor, Editor1} from './learnreact2/learn2-6'
 import {Index31} from './learnreact3/react-context'
 
 import {App1} from './learnrouter/index'
-import { HashRouter } from 'react-router-dom'
+import { HashRouter,BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -126,8 +126,8 @@ ReactDOM.render(
 //
 ReactDOM.render(
     (
-    <HashRouter>
+    <BrowserRouter>
         <App1 />
-    </HashRouter>
+    </BrowserRouter>
 ),
     document.getElementById('root'))
