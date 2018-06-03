@@ -20,6 +20,11 @@ class Header extends Component{
         store.subscribe(() => this._updateThemeColor())
     }
 
+    _get(){
+        fetch('data/word.txt').then()
+            .catch()
+    }
+
     _updateThemeColor () {
         const { store } = this.context
         const state = store.getState()

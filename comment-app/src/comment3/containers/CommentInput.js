@@ -2,7 +2,8 @@
  * Created by Administrator on 2018/6/2.
  */
 
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 import CommentInput from '../components/CommentInput'
 import { addComment } from '../reducers/comments'

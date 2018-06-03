@@ -19,6 +19,9 @@ import {Editor, Editor1} from './learnreact2/learn2-6'
 
 import {Index31} from './learnreact3/react-context'
 
+import {App1} from './learnrouter/index'
+import { HashRouter } from 'react-router-dom'
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
@@ -104,3 +107,27 @@ ReactDOM.render(
     document.getElementById('root')
 )
 
+
+// learn router, 这个地方有这个错误 Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null.
+//
+// const App = () => {
+//<Provider store={store}>
+  //  <MyApp/>
+  //  </Provider>
+//}
+//Arrow function above return null. If you're using curly brackets, you should add return keyword. Try add a return keyword first.
+// Compare this code below.
+
+//const add = (a, b) => a + b;
+//const anotherAdd = (a, b) => { return a + b; };
+//That code equal. The difference is that the first one doesn't need return keyword since it is not using curly brackets.
+//
+//
+//
+ReactDOM.render(
+    (
+    <HashRouter>
+        <App1 />
+    </HashRouter>
+),
+    document.getElementById('root'))

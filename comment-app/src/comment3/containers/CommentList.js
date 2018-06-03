@@ -3,7 +3,8 @@
  */
 
 
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 import CommentList from '../components/CommentList'
 import { initComments, deleteComment} from  '../reducers/comments'

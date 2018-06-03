@@ -3,7 +3,8 @@
  */
 
 
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 
 /*
 * 原来 CommentInput 需要从 LocalStorage 中获取 username 字段，
@@ -35,7 +36,7 @@ export default class CommentInput extends Component{
         this.textarea.focus();
     }
 
-    handleUserNameBlur(event){
+    handleUsernameBlur(event){
         if(this.props.onUserNameInputBlur){
             this.props.onUserNameInputBlur(event.target.value);
         }
@@ -63,9 +64,6 @@ export default class CommentInput extends Component{
         }
     }
 
-
-
-
     render() {
         return (
             <div className="comment-input">
@@ -86,7 +84,7 @@ export default class CommentInput extends Component{
                             <textarea
                                 ref={ (textarea) => this.textarea = textarea }
                                 value={this.state.content}
-                                onChange={this.handleContentChage.bind(this)}
+                                onChange={this.handleContentChange.bind(this)}
                             />
                         </div>
                     </div>
